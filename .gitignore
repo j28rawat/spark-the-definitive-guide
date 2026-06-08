@@ -1,0 +1,26 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+.python-version
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Spark
+derby.log
+metastore_db/
+spark-warehouse/
+/tmp/
+
+# Data (large files)
+data/*.csv
+data/*.parquet
+data/*.json
+!data/sample_*.csv
+!data/sample_*.json
+
+# macOS
+.DS_Store
