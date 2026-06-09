@@ -16,11 +16,11 @@ spark-warehouse/
 /tmp/
 
 # Data (large files)
-data/*.csv
-data/*.parquet
-data/*.json
-!data/sample_*.csv
-!data/sample_*.json
+#data/*.csv
+#data/*.parquet
+#data/*.json
+#!data/sample_*.csv
+#!data/sample_*.json
 
 # macOS
 .DS_Store

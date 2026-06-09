@@ -384,3 +384,32 @@ python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 ```
+
+---
+
+## Working with Notebooks in VSCode
+
+Each day uses **Jupyter notebooks** (`.ipynb`) instead of plain `.py` files for better readability and cell-by-cell execution.
+
+### Open a notebook
+1. In VSCode, open the project folder
+2. Navigate to e.g. `part1_overview/day01_spark_intro/day01_concepts.ipynb`
+3. Click to open — VSCode renders it with the Jupyter extension
+
+### Select the right kernel
+When you open a notebook for the first time, VSCode asks which Python kernel to use.  
+Click **"Select Kernel"** → **"Python Environments"** → choose the `.venv` interpreter  
+(it will say something like `Python 3.11.9 ('.venv': venv)`)
+
+### Each day's files
+| File | Purpose |
+|------|---------|
+| `dayXX_concepts.ipynb` | All concepts from the chapter(s), explained inline |
+| `dayXX_exercises.ipynb` | Problems to solve + solutions in the last cell |
+| `notes.md` | Reference sheet: mental models, term glossary, gotchas |
+
+### Recommended VSCode extensions (add to your existing list)
+```
+ms-toolsai.jupyter          # Jupyter notebook support (you likely have this)
+ms-toolsai.jupyter-keymap   # Jupyter keyboard shortcuts inside VSCode
+```

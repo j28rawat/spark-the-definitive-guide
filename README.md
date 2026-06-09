@@ -94,3 +94,22 @@ python environment/verify_setup.py
 - Each day's folder is self-contained and runnable independently
 - Commit at the end of each session with the message format:  
   `day04: basic structured operations — concepts + exercises`
+
+---
+
+## Notebook Workflow
+
+Open notebooks in VSCode (Jupyter extension required). Each day:
+
+```bash
+source .venv/bin/activate
+# Then open the notebook in VSCode and select the .venv kernel
+```
+
+Day folder pattern:
+```
+dayXX_topic/
+├── dayXX_concepts.ipynb   # Read + run cell by cell
+├── dayXX_exercises.ipynb  # Attempt exercises, check solutions at the end
+└── notes.md               # Reference sheet to review later
+```
