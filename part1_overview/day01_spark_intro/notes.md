@@ -9,7 +9,7 @@
 Your Python code
       │
       ▼
-  SparkSession  ──────────────────────────────────┐
+  SparkSession  ──────────────────────────────────-┐
       │                                            │
       │  builds a logical plan                     │
       ▼                                            │
@@ -24,7 +24,7 @@ Your Python code
       │  serialises tasks + sends over network
       ▼
   Executor 1  │  Executor 2  │  Executor N
-  (partition) │  (partition)  │  (partition)
+  (partition) │  (partition) │  (partition)
 ```
 
 ---
@@ -87,7 +87,7 @@ In PySpark 4.x, `SparkSession` is everything you need for DataFrames, SQL, Strea
 
 ## Partition Rule of Thumb
 
-- **Default parallelism**: `spark.default.parallelism` (defaults to number of cores × 2)
+- **Default parallelism**: `spark.default.parallelism` (defaults to number of cores)
 - **After a shuffle**: controlled by `spark.sql.shuffle.partitions` (default: 200 — often too high for local mode)
 - **For local development**: set shuffle partitions to number of CPU cores:
   ```python
